@@ -6,3 +6,6 @@ or hit the enter key. When either of this is done, the app looks through the API
 to reach the more in depth info on a movie or show. By looping through all of the related results, their ID is stored in an array. The array is
 then looped through and the API is called again, this time with the specific ID of the movie or show. This allows the API to return more info on the
 related searches.
+
+  On the top, there are specific links that displays the movies and shows in a sorted manner, by most popular, top rated, etc. This is done
+the same way as the search function, but uses specifc API calls provided by The Movie Database.
