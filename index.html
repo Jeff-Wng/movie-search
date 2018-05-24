@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie/TV Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Limelight|Barlow" rel="stylesheet">
+</head>
+<body>
+
+    <div class="content">
+        <h1>Movie/TV Search</h1>
+        <ul id="links">
+            <hr>
+            <li id="popular" class="sort">Most Popular</li><hr>
+            <li id="topRated" class="sort">Top Rated</li><hr>
+            <li id="mostRated" class="sort">Most Rated</li><hr>
+            <li id="newest" class="sort">Newest</li><hr>
+            <li id="revenue" class="sort">Revenue</li><hr>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search for movies or tv shows">
+            <button id="submitBtn">Submit</button>
+        </div>
+        <ul id="results"></ul>
+        <br><br>
+    </div>
+
+    <footer>
+        <p>Created using The Movie Database (TMD) API</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
