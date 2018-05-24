@@ -9,3 +9,5 @@ related searches.
 
   On the top, there are specific links that displays the movies and shows in a sorted manner, by most popular, top rated, etc. This is done
 the same way as the search function, but uses specifc API calls provided by The Movie Database.
+
+  The results also comes with an accompanying IMDB link to provide more information. 
