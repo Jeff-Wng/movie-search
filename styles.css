@@ -94,7 +94,8 @@ h1 {
 }
 
 .search button:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    border: 3px solid steelblue;
+    color: steelblue;
 }
 
 .search button:active {
@@ -217,6 +218,10 @@ footer p {
 @media screen and (max-width: 1080px) {
     .content {
         width: 100%;
+    }
+
+    .search {
+        width: 90%;
     }
 }
 
