@@ -1,16 +1,16 @@
 var http = "https://api.themoviedb.org/3";
 var movieSearch = "/search/movie";
 var tvSearch = "/search/tv";
-var apiKey = "?api_key=f3ffd3f971fdba192fb3e5d3524b5ae8";
+var apiKey = config.API_KEY;
 var query = "&query=";
 
 var id = 0;
 
-var popular = "https://api.themoviedb.org/3/discover/movie?api_key=f3ffd3f971fdba192fb3e5d3524b5ae8&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1";
-var topRated = "https://api.themoviedb.org/3/discover/movie?api_key=f3ffd3f971fdba192fb3e5d3524b5ae8&language=en-US&sort_by=vote_average.desc&include_adult=false&include_video=false&page=1";
-var mostRated = "https://api.themoviedb.org/3/discover/movie?api_key=f3ffd3f971fdba192fb3e5d3524b5ae8&language=en-US&sort_by=vote_count.desc&include_adult=false&include_video=false&page=1";
-var newest = "https://api.themoviedb.org/3/discover/movie?api_key=f3ffd3f971fdba192fb3e5d3524b5ae8&language=en-US&sort_by=release_date.desc&include_adult=false&include_video=false&page=1";
-var revenue = "https://api.themoviedb.org/3/discover/movie?api_key=f3ffd3f971fdba192fb3e5d3524b5ae8&language=en-US&sort_by=revenue.desc&include_adult=false&include_video=false&page=1";
+var popular = "https://api.themoviedb.org/3/discover/movie?api_key="+apiKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1";
+var topRated = "https://api.themoviedb.org/3/discover/movie?api_key="+apiKey+"&language=en-US&sort_by=vote_average.desc&include_adult=false&include_video=false&page=1";
+var mostRated = "https://api.themoviedb.org/3/discover/movie?api_key="+apiKey+"&language=en-US&sort_by=vote_count.desc&include_adult=false&include_video=false&page=1";
+var newest = "https://api.themoviedb.org/3/discover/movie?api_key="+apiKey+"&language=en-US&sort_by=release_date.desc&include_adult=false&include_video=false&page=1";
+var revenue = "https://api.themoviedb.org/3/discover/movie?api_key="+apiKey+"&language=en-US&sort_by=revenue.desc&include_adult=false&include_video=false&page=1";
 
 const loadJson = (movieUrl) => {
     $.getJSON(movieUrl, function(data) {
