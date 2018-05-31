@@ -11,3 +11,5 @@ related searches.
 the same way as the search function, but uses specifc API calls provided by The Movie Database.
 
   The results also comes with an accompanying IMDB link to provide more information. 
+  
+  The app can be used at https://jwong421.github.io/movie-search
